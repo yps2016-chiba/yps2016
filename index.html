@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YPS 2016 - Young Perceptionists' Seminar 2016 -</title>
+  <link rel='shortcut icon' href='/static/img/favicon.ico'>
+  <link rel='stylesheet' href='/static/style.css' type='text/css'>
+  <meta name="description" content="YPS (Young Perceptionists' Seminar) は若手知覚研究者の情報交換・討論・交流を目的とする研究会です。2016年度のYPSは9月5日〜7日に千葉県で開催されます。自称Youngな方であれば自由に参加することができます。">
+</head>
+<body>
+  <div class='header'>
+    <div class='title'>
+      &nbsp; &nbsp;
+      <span style='font-size: 300%; font-weight: bold;'>
+        <a href='/'>YPS2016</a>
+      </span>
+      &nbsp; &nbsp;
+      <span style='font-size: 125%;'>
+        - Young Perceptionists' Seminar 2016 -
+      </span>
+    </div>
+  </div>
+  <div class='menu'>
+    <div><a href='./'>Top</a></div>
+    <div><a href='./abstract.html'>What's YPS?</a></div>
+    <div><a href='./program.html'>Program</a></div>
+    <div><a href='./staff.html'>Staff</a></div>
+    <div><a href='./access.html'>Access</a></div>
+  </div>
+  <div id="fb-root"></div>
+  <div class='top_img'>
+    <img src='/static/img/YPS2016_top.jpg' alt=''>
+    <div class='message'>
+      <b>YPS (Young Perceptionists' Seminar) </b>とは？<br>
+      若手知覚研究者の情報交換・討論・交流を目的とする研究会です。自称Youngで、感覚、知覚、認知などの諸領域に興味をお持ちの方なら誰でも気軽に参加することができます。<br>
+      学会形式の発表以外に、構想段階の研究の発表も歓迎いたしますので、ふるってご参加ください。
+    </div>
+    <div class='info'>
+      日時: 9月5日(月) 〜 9月7日(水)<br>
+      会場: ホテル東天光 (千葉県白子温泉)<br>
+      会費: 学生20,000円 <span class='supplement' message='
+        ・食事代、宿泊費込みです<br>
+        ・参加人数によって変更する可能性があります<br>
+        ・関東以外からの学生参加については、できる限りの割引を予定しています<br>
+        ・学振DC/PDは有職者として扱います<br>
+        ・参加人数が50人に達した場合は申し込みを締め切らせて頂きますのでご了承ください'>
+      一般25,000円<span style='font-size: 80%;'>(※)</span></span><br>
+      主催: 千葉大学YPS準備委員会<br>
+      登録締切: <del>7月5日(火)</del> 7月12日(火)<br>
+      <div align='right'><span style='font-size: 105%; color: red;'>参加登録を締め切りました!</span></div>
+    </div>
+    <div class='guest'>
+      <b><span style='font-size: 125%;'>特別招待講演</span><br>
+      ・ 御領 謙 先生 (千葉大学名誉教授)<br>
+      ・ 田谷 修一郎 先生 (慶応義塾大学法学部専任講師)</b>
+    </div>
+  </div>
+  <div class='top_register'>
+    <div class='top_register_participation'>
+      <strike>参加登録はこちら</strike>
+    </div>
+    <div class='top_register_presentation'>
+      <strike>抄録登録はこちら</strike>
+    </div>
+  </div>
+  <div class='top_main_contents'>
+    <div align='right'><span style='font-size: 80%'> 本会は日本基礎心理学会および日本視覚学会による研究活動助成を受けて開催しています</span></div>
+    <div class='top_sidebar'>
+      <div><a href='https://twitter.com/share' class='twitter-share-button'>Tweet</a></div>
+      <div class="fb-like" data-href="http://yps2016.mints.ne.jp/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+    </div>
+    <div class='top_update'>
+      <h2>更新情報</h2>
+      <dl>
+        <dt>2016/08/27</dt>
+        <dd><a href='/program'>大会プログラムを公開しました。</a></dd>
+        <dt>2016/07/12</dt>
+        <dd>参加登録を締め切りました。</dd>
+        <dt>2016/07/05</dt>
+        <dd>締め切りを7月12日に延長しました。</dd>
+        <dt>2016/06/26</dt>
+        <dd>第二号通信を公開しました。</dd>
+        <dt>2016/05/24</dt>
+        <dd>ポスター・第一号通信を公開しました。</dd>
+        <dt>2016/04/27</dt>
+        <dd>参加費・会場・特別講演等の情報を更新しました。</dd>
+        <dt>2016/03/28</dt>
+        <dd>会場についての情報を追加しました。</dd>
+        <dt>2016/03/20</dt>
+        <dd>日時についての情報を追加しました。</dd>
+        <dt>2016/02/28</dt>
+        <dd>サイトを開設しました。</dd>
+      </dl>
+    </div>
+  </div>
+  <script>
+    var obj = document.getElementsByClassName('supplement');
+    var length = obj.length;
+    for(var i = 0; i < length; i++) {
+      obj.item(0).onmouseover = function () {
+        var element = document.createElement('div');
+        element.innerHTML = this.getAttribute('message');
+        element.className = 'supplement-message';
+        this.appendChild(element);
+      }
+      obj.item(0).onmouseout = function () {
+        this.removeChild(this.childNodes.item(this.childNodes.length - 1));
+      }
+    }
+  </script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+</html>

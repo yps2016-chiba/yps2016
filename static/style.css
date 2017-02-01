@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+/* 全体設定 */
+@font-face {
+    font-family: latoblack;
+    src: url('/static/fonts/Lato2OFL/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: notoregular;
+    src: url('/static/fonts/noto/NotoSans-Regular.ttf');
+}
+
+@media (min-width: 1024px) {
+    body {
+        width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+body {
+    background-color: rgba(241,232,198,1);
+    font-size: 16px;
+    font-family: notoregular, '游ゴシック体', 'Yu Gothic', 'YuGothic', sans-serif;
+    font-style: normal;
+    color: #000;
+    line-height: 1.5;
+}
+
+div {
+    padding: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 共通部分 (templates.pt) の設定 */
+div.header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+div.title {
+  float: left;
+  color: #c6002f;
+  font-weight: normal;
+  font-family: latoblack;
+}
+
+div.title a {
+    color: rgba(198,0,47,1);
+    text-decoration: none;
+}
+
+div.authenticated {
+  float: right;
+  color: blue;
+  text-decoration: none;
+}
+
+div.menu {
+    width: 70%;
+    background-image: -ms-linear-gradient(top, #fdd, #f44);
+    background-image: -moz-linear-gradient(top, #fdd, #f44);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #fdd), color-stop(1.0, #f44));
+    border-radius: 10px;
+}
+
+div.menu:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.menu div {
+    float: left;
+    width: 20%;
+    text-align: center;
+    font-family: latoblack;
+    border-radius: 10px;
+}
+
+div.menu div:hover {
+    background-image: -ms-linear-gradient(top, #fcc, #f33);
+    background-image: -moz-linear-gradient(top, #fcc, #f33);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #fcc), color-stop(1.0, #f33));
+}
+
+div.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* トップ部分 (top.pt) の設定 */
+div.top_img {
+    position: relative;
+}
+
+div.top_img img {
+    width: 100%;
+}
+
+div.top_img div.message {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 120px;
+    text-align: left;
+    font-size: 120%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10;
+}
+
+div.top_img div.info {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10;
+}
+
+span.supplement:hover {
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.supplement-message {
+  display: block;
+  position: absolute;
+  bottom: 4.0em;
+  right: -0.5em;
+  z-index: 9999;
+  width: 40em;
+  background: lavender;
+  border-radius: 0.5em;
+}
+
+div.top_img div.guest {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 10;
+}
+
+div.top_register a{
+    color: black;
+    text-decoration: none;
+}
+
+div.top_register:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.top_register_participation {
+    position: relative;
+    left: 15%;
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    background-image: -ms-linear-gradient(top, #ccc, #888);
+    background-image: -moz-linear-gradient(top, #ccc, #888);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ccc), color-stop(1.0, #888));
+    border-radius: 10px;
+}
+
+div.top_register_participation:hover {
+    font-weight: bold;
+    background-image: -ms-linear-gradient(top, #ccc, #888);
+    background-image: -moz-linear-gradient(top, #ccc, #888);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ccc), color-stop(1.0, #888));
+}
+
+div.top_register_presentation {
+    position: relative;
+    left: 25%;
+    width: 30%;
+    float: left;
+    text-align: center;
+    font-size: 20px;
+    background-image: -ms-linear-gradient(top, #ccc, #888);
+    background-image: -moz-linear-gradient(top, #ccc, #888);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ccc), color-stop(1.0, #888));
+    border-radius: 10px;
+}
+
+div.top_register_presentation:hover {
+    font-weight: bold;
+    background-image: -ms-linear-gradient(top, #ccc, #888);
+    background-image: -moz-linear-gradient(top, #ccc, #888);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.0, #ccc), color-stop(1.0, #888));
+}
+
+div.top_main_contents:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+div.top_sidebar {
+    float: right;
+    width: 10%;
+}
+
+div.top_update {
+    float: left;
+    width: 50%;
+}
+
+div.top_update h2 {
+    margin: 0 0 5px;
+}
+
+div.top_update dl {
+    border-top: 1px #ccc dotted;
+}
+
+div.top_update dt {
+    width: 80px;
+    float: left;
+    padding: 7px 0px 6px 3px;
+    border-bottom: 1px #ccc dotted;
+    line-height: 120%
+}
+
+div.top_update dd {
+    padding: 7px 0px 6px 80px;
+    border-bottom: 1px #ccc dotted;
+    line-height: 120%;
+}
+
+/* アブストラクト部分 (abstract.pt) の設定 */
+div.abstract img {
+    display: block;
+    margin: 0 auto;
+}
+
+div.abstract dt {
+    width: 3.0em;
+    float: left;
+    padding: 0 0 8px 3px;
+    line-height: 120%
+}
+
+div.abstract dd {
+    padding: 0 0 8px 3.0em;
+    line-height: 120%;
+}
+
+/* 送信フォーム (register*.pt) の設定 */
+form dt {
+    width: 7.0em;
+    float: left;
+    padding: 8px 0 8px 3px;
+    line-height: 120%
+}
+
+form dd {
+    padding: 8px 0 8px 7.0em;
+    line-height: 120%;
+}
+
+/* ここまで設定済み */
